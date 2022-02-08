@@ -12,6 +12,7 @@
   --color3: #6a3e2e;
   --color4: #a34c37;
   --color5: #dd5a40;
+  --color6: #BBB6DF;
 
   --fg-dark: #ffffff;
 
@@ -147,6 +148,14 @@ h6 {
 .links ul li {
   list-style: none;
 }
+
+img.logo {
+  filter: drop-shadow(0px 0px 2px var(--color4));  
+}
+
+img.logo:hover {
+  filter: drop-shadow(2px 2px 2px var(--color5));
+}
     </style>
 
   </head>
@@ -156,7 +165,7 @@ h6 {
         <div id="logo">
           <!-- Aquí irá el logo -->
           <a href="/home">
-            <img src={Astro.resolve('../assets/logo.png')}/>
+            <img class="logo" src="/assets/logo.png" />
           </a>
         </div>
         <div id="menu">
